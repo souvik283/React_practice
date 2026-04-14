@@ -1,0 +1,10 @@
+body{
+    background: black;
+    color: white;
+}
+.card{
+    background-color: rgb(243, 130, 167);
+    margin: 20px;
+    border-radius: 12px;
+    padding: 5px 20px;
+}
