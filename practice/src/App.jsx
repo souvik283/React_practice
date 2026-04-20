@@ -14,7 +14,7 @@ const App = () => {
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, repudiandae.</p>
     </div>
     <div className='card'>
-      {Card()}
+      <Card/>
           </div>
     </>
   )
