@@ -127,7 +127,13 @@ body{
 .lower button{
  background-color: #111111;
  color: #f6f4f4;
- padding: 6px 20px;
+ padding: 8px 20px;
  font-size: 13px;
  cursor: pointer;
+}
+.lower button:hover{
+  box-shadow: 1px 3px 22px rgb(119, 118, 118);
+  border: none;
+  
+  
 }
