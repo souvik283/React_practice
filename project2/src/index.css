@@ -10,7 +10,7 @@ body{
   flex-wrap: wrap;
 }
 .card{
-  width: 200px;
+  width: 250px;
   height: 300px;
   border: none ;
   background-color: rgb(234, 234, 234);
@@ -20,16 +20,29 @@ body{
   margin: 10px;
   box-shadow: 1px 2px 12px rgb(169, 169, 169);
 }
+.card .top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
  .top img{
-  height: 60px;
-  width: 60px;
+  height: 40px;
+  width: 40px;
   border-radius: 80px;
   object-fit: cover;
+  border: solid 2px #dadada ;
+  padding: 4px;
 }
 
 .card button{
-  padding: 7px;
+  display: flex;
+  padding: 4px 8px;
   border-radius: 6px;
-  background-color: aqua;
+  align-items: center;
+  border: solid 2px #dadada;
   cursor: pointer;
+  font-size: 12px;
+  gap: 3px;
+  background-color: transparent;
+  color: #4f4f4f;
 }
