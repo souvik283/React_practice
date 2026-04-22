@@ -2,12 +2,17 @@ import React from 'react'
 import Card from './components/card'
 import Card2 from './components/card2'
 
+import Jobs from './job'
+
 const App = () => {
   return (
     <div className='parent'>
-      {/* <Card user="Souvik" age={18} img="https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg" alt="profile photo"/> */}
-      {/* <Card user="Ghosh" age= {21} img="https://img.freepik.com/free-photo/closeup-shot-beautiful-butterfly-with-interesting-textures-orange-petaled-flower_181624-7640.jpg?semt=ais_hybrid&w=740&q=80"/> */}
-    <Card2/>
+    {Jobs.map(function (elem) {
+      // console.log(elem);
+      // return <Card2 company={elem.pay}/>
+      return <Card2 brandLogo={elem.brandLogo} company = {elem.company} datePosted = {elem.datePosted} post = {elem.post} tag1= {elem.tag1} tag2 = {elem.tag2} pay = {elem.pay} location= {elem.location} />
+    })}
+
     </div>
   )
 }

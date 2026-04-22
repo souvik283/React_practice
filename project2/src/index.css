@@ -1,25 +1,36 @@
-body{
-  background-color: rgb(144, 145, 145);
-  color: rgb(39, 38, 38);
+*{
   padding: 0;
   margin: 0;
+}
+body{
+  background-color: rgb(230, 229, 229);
+  color: rgb(39, 38, 38);
+
 }
 .parent{
   padding: 15px;
   display: flex;
   flex-wrap: wrap;
+  gap: 9px;
+  justify-content: space-around;
 }
 .card{
-  width: 250px;
-  height: 300px;
+  width: 223px;
+  height: 290px;
+  display: flex;
   border: none ;
-  background-color: rgb(234, 234, 234);
-  padding: 20px;  
-  border-radius: 20px;
+  background-color: rgb(226, 226, 226);
+  padding: 15px 18px;  
+  border-radius: 30px;
   text-align: center;
   margin: 10px;
-  box-shadow: 1px 2px 12px rgb(169, 169, 169);
+  box-shadow: 1px 3px 15px rgb(127, 127, 127);
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
+
+/* card top */
 .card .top{
   display: flex;
   align-items: center;
@@ -36,7 +47,7 @@ body{
 
 .card button{
   display: flex;
-  padding: 4px 8px;
+  padding: 4px 13px;
   border-radius: 6px;
   align-items: center;
   border: solid 2px #dadada;
@@ -45,4 +56,78 @@ body{
   gap: 3px;
   background-color: transparent;
   color: #4f4f4f;
+}
+
+/* card center */
+.center{
+  display: flex;
+  align-items: start;
+}
+
+.center div{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 27px;
+}
+
+.center h3{
+  font-size: 19px;
+  color: rgb(59, 59, 59);
+}
+.center h3 span{
+  font-size: 12px;
+  color: #8f8f8f;
+}
+.center h2{
+  font-size: 22px;
+  margin: 3px 0;
+} 
+.center .tag{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin-top: 3px;
+}
+
+.center .tag h4{
+  background-color: #d3d3d3;
+  color: rgb(33, 33, 33);
+  padding: 3px 7px;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+/* card bottom */
+
+.card .lower {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px ;
+  padding-bottom: 5px;
+  border-top: solid 2px #b1b1b1;
+}
+
+.lower div{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+}
+
+.lower h2 {
+  padding: 5px 0;
+  font-size: 18px;
+}
+.lower h4 {
+  font-size: 11px;
+  color: #939292;
+}
+.lower button{
+ background-color: #111111;
+ color: #f6f4f4;
+ padding: 6px 20px;
+ font-size: 13px;
+ cursor: pointer;
 }
