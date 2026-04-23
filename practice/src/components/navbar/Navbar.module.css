@@ -1,0 +1,15 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navElement {
+    display: flex;
+    flex-direction: row;
+}
+
+.navElement p{
+    padding: 6px 25px;
+    background-color: beige;
+    margin: 0 4px;
+}
